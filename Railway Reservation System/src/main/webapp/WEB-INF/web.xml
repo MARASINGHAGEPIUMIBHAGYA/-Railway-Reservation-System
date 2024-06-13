@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>InsertBookingServlet</servlet-name>
+        <servlet-class>com.passenger.InsertBookingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertBookingServlet</servlet-name>
+        <url-pattern>/InsertBookingServlet</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+	  <servlet-name>UpdateBookingServlet</servlet-name>
+	  <servlet-class>com.passenger.UpdateBookingServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+	   <servlet-name>UpdateBookingServlet</servlet-name>
+	   <url-pattern>/update</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+	  <servlet-name>DeleteBookingServlet</servlet-name>
+	  <servlet-class>com.passenger.DeleteBookings</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+	   <servlet-name>DeleteBookingServlet</servlet-name>
+	   <url-pattern>/delete</url-pattern>
+   </servlet-mapping>
+
+
+</web-app>
+</element>
